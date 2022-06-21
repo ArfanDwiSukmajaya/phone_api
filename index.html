@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h3>Search Any Phone Here</h3>
+      <p>Get the information from the phone you are looking for</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-11">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control input-keyword" placeholder="Search Phone" aria-label="Search I Phone" aria-describedby="button-addon2" />
+            <button class="btn search-button btn-primary" type="button"">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <div class="row phones-container">
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="phoneDetailModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="phoneDetailModalLabel">Spesifikasi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="bg-dark text-center text-white mt-5">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright: Arfan Dwi Sukmajayaa
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
