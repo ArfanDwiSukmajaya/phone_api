@@ -7,7 +7,6 @@ async function show() {
   })
     .then((response) => response.json())
     .then((response) => {
-      console.log(response.data.phones);
       updateUi(response.data.phones);
     });
 }
